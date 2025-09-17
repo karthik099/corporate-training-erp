@@ -2,7 +2,9 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import AdminDashboard from './AdminDashboard'
+import AdminDashboard from './components/AdminDashboard/AdminDashboard'
+import Home from './components/Home/Home'
+import TrainingRequests from './components/TrainingRequests/TrainingRequests'
 
 function App() {
   const [count, setCount] = useState(0)
