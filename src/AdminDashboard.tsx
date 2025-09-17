@@ -37,8 +37,8 @@ export default function AdminDashboard() {
           <div className="h-screen flex flex-col">
             <div className="flex items-center justify-between p-4 border-b">
               <div className="flex items-center gap-3">
-                <div className="h-8 w-8 rounded bg-indigo-600 flex items-center justify-center text-white font-bold">AD</div>
-                {sidebarOpen && <h1 className="text-lg font-semibold">Admin</h1>}
+                <div className="h-8 w-8 rounded bg-indigo-600 flex items-center justify-center text-white font-bold">TM</div>
+                {sidebarOpen && <h1 className="text-lg font-semibold">Training ERP</h1>}
               </div>
               <button
                 className="p-1 rounded hover:bg-slate-100"
@@ -61,9 +61,6 @@ export default function AdminDashboard() {
                 ].map((item) => (
                   <li key={item.key}>
                     <a className="group flex items-center gap-3 p-2 rounded hover:bg-slate-100" href="#">
-                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                        <circle cx="12" cy="12" r="10" strokeWidth="2" />
-                      </svg>
                       {sidebarOpen && <span className="font-medium">{item.label}</span>}
                     </a>
                   </li>
